@@ -1,0 +1,3 @@
+[submodule "sweet-framework"]
+	path = sweet-framework
+	url = git@github.com:ajcates/Sweet-Framework.git
