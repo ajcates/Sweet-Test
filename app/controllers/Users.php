@@ -27,14 +27,15 @@ class Users extends App {
 			'title' => 'Users',
 			'items' => $this->models->User->sort(array('name' => 'ASC'))->all(),
 			'itemsEach' => function($user) {
-				return B::li(array('class' => 'user'), B::a(array('href' => SITE_URL . 'users/edit/' . $user->id),
-					B::h3($user->name),
-					B::img(array(
+				return B::li(
+					array('class' => 'user'),
+					B::h3(B::a(array('href' => SITE_URL . 'users/edit/' . $user->id), $user->name)),
+					B::a(array('href' => SITE_URL . 'users/edit/' . $user->id), B::img(array(
 						'src' => gravatar($user->email),
 						'alt' => 'gravatar'
-					)),
+					))),
 					B::p($user->lastName . ', ' . $user->firstName)
-				));
+				);
 			},
 			'actions' => join(array(
 				B::li(B::h2('Users:')),

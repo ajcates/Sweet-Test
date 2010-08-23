@@ -31,6 +31,7 @@ class SweetFrameworkTestCase extends UnitTestCase {
 	
 	function tearDown() {
 		unset($this->app);
+		$this->app = null;
 	}
 	
 	function testClassName() {

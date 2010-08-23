@@ -228,19 +228,4 @@ if($user = $this->create($userInfo)) {
 		return sha1($this->generatePassword());
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

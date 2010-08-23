@@ -1,4 +1,116 @@
+/* @override http://localhost/projects/sweet-test/app/themes/default/styles/main.css */
+
 * {
 	margin: 0px;
 	padding: 0px;
 }
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1pc;
+	line-height: 1.5;
+}
+
+header {
+	padding: 1em;
+	background: #333;
+	color: #fff;
+	float: left;
+	width: 100%;
+	display: table;
+}
+header hgroup {
+	display: table;
+	float: left;
+}
+header h1 {
+	text-shadow: 0pt -1pt 0pt hsla(75,100%, 80%, .9), 0pt 2pt 0pt rgba(0,0,0, .4);
+	font-size: 2.5em;
+	margin-top: -.25em;
+}
+header h2 {
+	font-size: 1.2em;
+	text-shadow: 0pt 2pt 0pt rgba(0,0,0, .6);
+}
+
+header a {
+	color: #8ab210;
+	text-decoration: none;
+}
+
+header nav {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+header nav ul {
+	float: right;
+	margin-right: -.5em;
+}
+
+header nav ul li {
+	font-weight: bold;
+	display: inline-block;
+	text-shadow: 0pt -1pt 0pt hsla(75,100%, 70%, .7), 0pt 1pt 0pt rgba(0,0,0, .4);
+	list-style: none;
+	padding: .5em 1em;
+	background: #6f0ea0;
+	margin: 0 .5em;
+	border-radius: 3pt;
+}
+
+ul.actions {
+	list-style: none;
+}
+
+div.main hgroup {
+	clear: both;
+}
+
+div.main {
+	padding: 2em;
+}
+
+.main form label {
+	display: block;
+	margin: .5em 0;
+}
+
+.main form input {
+	display: block;
+	margin: .5em 0;
+}
+
+
+
+.content p {
+	margin: .5em 0;
+}
+
+.content ul {
+	margin: .5em 0em .5em 1.5em;
+}
+
+
+ul.list li.user {
+	list-style: none;
+}
+
+ul.list li.user img {
+	height: 52px;
+	margin: .5em;
+}
+
+
+footer {
+	clear: both;
+	padding: 1em;
+	background: #333;
+	color: #fff;
+}
+
+footer a {
+	color: #8ab210;	
+}
+
+

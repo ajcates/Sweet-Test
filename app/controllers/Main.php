@@ -25,7 +25,7 @@ Class Main extends App {
 		} else {
 			$this->libs->Template->set(array(
 				'title' => 'Sweet-Test',
-				'content'=> 'Logged In.'
+				'content'=> V::get('misc/lorem')
 			))->render('bases/content');
 		}
 	}

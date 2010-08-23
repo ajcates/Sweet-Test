@@ -2,7 +2,8 @@
 	'head' => B::head(
 		//B::meta(array('http-equiv' => 'Content-Type', 'content' => 'text/html; charset=utf-8')),
 		B::meta(array('charset' => 'utf-8')),
-		B::title($siteName . ' - ' . $title)
+		B::title($siteName . ' - ' . $title),
+		B::link(array('rel' => 'stylesheet', 'href' => T::$url . 'styles/main.css', 'type' => 'text/css', 'media' => 'screen', 'title'=>'Main Style'))
 	),
 	'body' => B::body(
 		B::header(
@@ -12,14 +13,14 @@
 			),
 			T::get('parts/common/nav')
 		),
-		B::hgroup(
-			array('class' => 'title'),
-			B::h1($title),
-			(isset($message) && !empty($message)) ? B::h2(array('class' => 'message'), $message) : ''
-		),
 		(!empty($sidebar) ? B::aside($sidebar) : ''),
 		B::div(
 			array('class' => 'main'),
+			B::hgroup(
+				array('class' => 'title'),
+				B::h1($title),
+				(isset($message) && !empty($message)) ? B::h2(array('class' => 'message'), $message) : ''
+			),
 			(isset($actions) && !empty($actions)) ? B::ul(array('class' => 'actions'), $actions) : '',
 			B::div(
 				array('class' => 'content form'),
