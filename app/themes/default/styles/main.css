@@ -9,6 +9,8 @@ body {
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	font-size: 1pc;
 	line-height: 1.5;
+	background: #eee;
+	color: #333;
 }
 
 header {
@@ -18,13 +20,14 @@ header {
 	float: left;
 	width: 100%;
 	display: table;
+	border-bottom: 1pt solid #fff;
 }
 header hgroup {
 	display: table;
 	float: left;
 }
 header h1 {
-	text-shadow: 0pt -1pt 0pt hsla(75,100%, 80%, .9), 0pt 2pt 0pt rgba(0,0,0, .4);
+	text-shadow: 0pt -1pt 0pt hsla(75,100%, 70%, 1), 0pt 2pt 0pt rgba(0,0,0, .4);
 	font-size: 2.5em;
 	margin-top: -.25em;
 }
@@ -51,12 +54,15 @@ header nav ul {
 header nav ul li {
 	font-weight: bold;
 	display: inline-block;
-	text-shadow: 0pt -1pt 0pt hsla(75,100%, 70%, .7), 0pt 1pt 0pt rgba(0,0,0, .4);
+	text-shadow: 0pt 1pt 0pt rgba(0,0,0, .6), 0pt -1pt 0pt hsla(75,50%, 70%, 1);
 	list-style: none;
 	padding: .5em 1em;
-	background: #6f0ea0;
+	background: #666;
 	margin: 0 .5em;
 	border-radius: 3pt;
+	border-top: 1pt solid rgba(255,255,255, .2);
+	border-bottom: 1pt solid rgba(0,0,0, .7);
+	-webkit-box-shadow: inset 0pt -1pt 2pt rgba(255,255,255, .2);
 }
 
 ul.actions {
